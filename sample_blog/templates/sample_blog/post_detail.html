@@ -8,13 +8,15 @@
     <h1>Blog</h1>
 </div>
 <section>
-    {% for post in posts %}
     <article class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
-        <p>{{ post.text }}</p>
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1 class="post-header">{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
     </article>
-    {% endfor %}
 </section>
 
 
