@@ -1,13 +1,27 @@
 /* CSS Document */
 
 body {
-    margin: auto;
-    width: 500px;
-    color: red;
+    width: 100%;
     }
 h1 {
-    font-size: 140%;
+    font-size: 200%;
+    color: #fff;
+    font-family: 'Lobster';
     }
-.test {
+h4 a {
+    color: #fca205;
+    font-family: 'Lobster'
+}
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+.post {
+    margin-bottom: 70px;
+}
 
-    }
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+

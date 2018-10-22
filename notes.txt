@@ -1,1 +1,1 @@
-left off here: hhttps://tutorial.djangogirls.org/en/css/
+left off here: https://tutorial.djangogirls.org/en/css/

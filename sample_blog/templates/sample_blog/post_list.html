@@ -4,12 +4,14 @@
 
 <!-- |*|*|*|*| Content |*|*|*|*| -->
 {% block content %}
-<h1>Blog</h1>
+<div class="page-header">
+    <h1>Blog</h1>
+</div>
 <section>
     {% for post in posts %}
-    <article>
+    <article class="post">
         <p>published: {{ post.published_date }}</p>
-        <h2><a href="#">{{ post.title }}</a></h2>
+        <h4><a href="#">{{ post.title }}</a></h4>
         <p>{{ post.text }}</p>
     </article>
     {% endfor %}
