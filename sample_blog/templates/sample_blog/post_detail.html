@@ -12,6 +12,9 @@
             </div>
         {% endif %}
         <h1 class="post-header">{{ post.title }}</h1>
+        <span class="js-like-post-count">3</span>
+        <!-- find out how one is supposed to target / toggle a class in an i tag wrapped in a tag-->
+        <a href="#" class="foo js-like-post"><i class="fas fa-heart"></i></a>
         <p>{{ post.text|linebreaksbr }}</p>
     </article>
 </section>
